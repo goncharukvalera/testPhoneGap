@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>WeedWays</title>
+    </head>
+    <body>
+<!--  -->
+        <div data-role="page" id="pageone" data-theme="a" date-fullscreen="true">
+          <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn="Back" data-back-btn-theme="a">
+            <a href="#" data-icon="gear" data-transition="slide" class="ui-btn-right">Settings</a>
+            <h2><img src="img/logo4.png" class="header-logo"> WeedWays First Page</h2>
+          </div>
+
+          <div data-role="main" class="ui-content">
+            <form>
+                <input type="submit" data-inline="true" value="Input Button" />
+                <button data-inline="true">Button</button>
+                <button data-inline="true" data-corners="false">No Rounded Corners</button>
+                <button data-inline="true" data-shadows="false">No Shadow</button>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <input type="submit" value="send" />
+                    <button>Button</button>
+                    <a href="#" data-role="button" data-theme="b">Like</a>
+                    <a href="#" data-role="button">Dislike</a>
+                </div>
+                <div data-role="controlgroup">
+                    <input type="checkbox" id="ch1"><label for="ch1">Check Box 1</label>
+                    <input type="checkbox" id="ch2"><label for="ch2">Check Box 2</label>
+                    <input type="checkbox" id="ch3"><label for="ch3">Check Box 3</label>
+                </div>
+            </form>
+            <br>
+            <ol data-role="listview">
+              <li><a href="#">List Item</a></li>
+              <li><a href="#">List Item</a></li>
+              <li><a href="#">List Item</a></li>
+            </ol>
+            <ul data-role="listview" data-inset="true">
+              <li><a href="#">List Item</a></li>
+              <li><a href="#">List Item</a></li>
+              <li><a href="#">List Item</a></li>
+            </ul>
+          </div>
+
+          <div data-role="footer" data-id="main-menu" data-position="fixed" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#pageone" data-icon="grid" data-transition="slide" class="ui-btn-active ui-state-presist">Page One</a></li>
+                    <li><a href="#pagetwo" data-icon="grid" data-transition="slide">Page Two</a></li>
+                    <li><a href="#dialog" data-icon="info" data-transition="fade">Dialog Page</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+<!--  -->
+        <div data-role="page" id="pagetwo" data-theme="a" date-fullscreen="true">
+          <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn="Back" data-back-btn-theme="a">
+            <a href="#" data-icon="refresh" data-transition="slide" class="ui-btn-left">Edit</a>
+            <a href="#" data-icon="plus" data-transition="slide" class="ui-btn-right">Add</a>
+            <h2><img src="img/logo4.png" class="header-logo"> WeedWays Page Two</h2>
+          </div>
+
+          <div data-role="main" class="ui-content">
+            <div class="collapsible-set">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>Tab 1</h3>
+                    <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Tab 2</h3>
+                    <p>This is Page Two. This is Page Two. This is Page Two. This is Page Two.</p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Tab 3</h3>
+                    <p>Tab 3 This is Page Two. Tab 3 This is Page Two. Tab 3 This is Page Two.</p>
+                </div>
+            </div>
+          </div>
+
+          <div data-role="footer" data-id="main-menu" data-position="fixed" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#pageone" data-icon="grid" data-transition="slide">Page One</a></li>
+                    <li><a href="#pagetwo" data-icon="grid" data-transition="slide" class="ui-btn-active ui-state-presist">Page Two</a></li>
+                    <li><a href="#dialog" data-icon="info" data-transition="fade">Dialog Page</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+<!--  -->
+        <div data-role="page" data-dialog="true" id="dialog" data-theme="a" date-fullscreen="true">
+          <div data-role="header">
+            <h2><img src="img/logo4.png" class="header-logo"> WeedWays Dialog Box</h2>
+          </div>
+
+          <div data-role="main" class="ui-content">
+            <div class="ui-grid-b">
+                <div class="ui-block-a">Block A</div>
+                <div class="ui-block-b">Block B Text Text Text Text Text Text </div>
+                <div class="ui-block-c">Block C Text Block C Text Block C</div>
+            </div>
+          </div>
+
+          <div data-role="footer" data-id="main-menu" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#pagetwo" data-icon="grid" data-transition="slide">Page One</a></li>
+                    <li><a href="#pagetwo" data-icon="grid" data-transition="slide">Page Two</a></li>
+                    <li><a href="#dialog" data-icon="info" data-transition="fade" class="ui-btn-active ui-state-presist">Dialog Page</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
